@@ -1,5 +1,5 @@
 function greeting() {
-    console.log(`Hi ${this.firstName } . I am ${this.lastName} `);
+    console.log( `Hi ${this.firstName } . I am ${this.lastName} ` );
 }
 
 const obj = {
@@ -7,11 +7,11 @@ const obj = {
     lastName: 'Tran'
 };
 
-greeting.apply(obj);
+greeting.apply( obj );
 
 function sum() {
-    const number = Array.from(arguments);
-    return number.reduce((sum, num)=> sum + num);
+    const number = Array.from( arguments );
+    return number.reduce( ( sum, num ) => sum + num );
 }
 
 function average() {
@@ -20,7 +20,7 @@ function average() {
     //     return sum * num;
     // });
 
-   return sum.apply(null, arguments)/arguments.length ;
+    return sum.apply( null, arguments ) / arguments.length;
 }
 
-console.log(average(1, 3, 2, 6));
+console.log( average( 1, 3, 2, 6 ) );

@@ -1,10 +1,10 @@
 function greeting() {
-    console.log(`Hi ${this.firstName } . I am ${this.lastName} `);
+    console.log( `Hi ${this.firstName } . I am ${this.lastName} ` );
 }
 
 const obj = {
-    firstName : 'Hue',
+    firstName: 'Hue',
     lastName: 'Tran'
 };
 
-greeting.call(obj);
+greeting.call( obj );

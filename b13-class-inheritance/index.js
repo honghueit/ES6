@@ -1,19 +1,19 @@
 class Animal {
-    constructor(name) {
+    constructor( name ) {
         this.name = name;
     }
 
     eat() {
-        console.log('Eating...');
+        console.log( 'Eating...' );
     }
 }
 
-class Bird  extends Animal {
+class Bird extends Animal {
     fly() {
-        console.log('Flying');
+        console.log( 'Flying' );
     }
 }
 
-const bird = new Bird('vet');
+const bird = new Bird( 'vet' );
 bird.eat();
 bird.fly();

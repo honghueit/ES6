@@ -3,19 +3,19 @@
 // };
 // console.log(sum1(1,2));
 
-const sumAB = (a, b) => a + b;
+const sumAB = ( a, b ) => a + b;
 
-console.log(sumAB(4, 6));
+console.log( sumAB( 4, 6 ) );
 
 
 //function no param
 const doSomething = () => Date.now();
 
-console.log(doSomething());
+console.log( doSomething() );
 
-const arr = [1, 2, 3];
-const newArr = arr.map(x => x * x);
-console.log(newArr);
+const arr = [ 1, 2, 3 ];
+const newArr = arr.map( x => x * x );
+console.log( newArr );
 
 
 const a = {
@@ -23,8 +23,8 @@ const a = {
     run: function () {
 
         let run1 = function () {
-            console.log(this.name);
-        }.bind(this);
+            console.log( this.name );
+        }.bind( this );
 
         run1();
     }
@@ -34,9 +34,9 @@ a.run();
 const b = {
     foo: 'bar',
     run: function () {
-        setTimeout(function () {
-            console.log(this.foo)
-        }, 2000)
+        setTimeout( function () {
+            console.log( this.foo )
+        }, 2000 )
     }
 };
 
@@ -45,9 +45,9 @@ b.run(); // undefined
 const c = {
     foo: 'bar',
     run: function () {
-        setTimeout(function () {
-            console.log(this.foo)
-        }.bind(this), 2000) // bind(a) or var self = this
+        setTimeout( function () {
+            console.log( this.foo )
+        }.bind( this ), 2000 ) // bind(a) or var self = this
     }
 };
 
@@ -57,8 +57,8 @@ const d = {
     foo: 'bar',
     run: function () {
         setTimeout( () => {
-            console.log(this.foo)
-        }, 2000)
+            console.log( this.foo )
+        }, 2000 )
     }
 };
 

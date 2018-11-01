@@ -1,8 +1,8 @@
 function sum() {
-    const number = Array.from(arguments);
-    return number.reduce(function (sum, num) {
+    const number = Array.from( arguments );
+    return number.reduce( function ( sum, num ) {
         return sum + num;
-    }, 0)
+    }, 0 )
 }
 
-console.log(sum(1, 2, 5, 2));
+console.log( sum( 1, 2, 5, 2 ) );

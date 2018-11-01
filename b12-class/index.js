@@ -1,13 +1,13 @@
 class Mouse {
-    constructor(name) {
+    constructor( name ) {
         this.name = name;
     }
 
     run() {
-        console.log(` Hello ${this.name} `)
+        console.log( ` Hello ${this.name} ` )
     }
 
 }
 
-const mouses = new Mouse('micky');
+const mouses = new Mouse( 'micky' );
 mouses.run();
