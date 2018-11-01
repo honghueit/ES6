@@ -4,7 +4,5 @@ function f( mouse ) {
         console.log( ` ${mouse} eating ${food}` )
     }
 }
-
-//console.log(f('mouse'));
 const mouse = f('micky');
 console.log(mouse('rice'));
