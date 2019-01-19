@@ -13,8 +13,8 @@ function isEmpty1( obj ) {
 
 isEmpty1( person );
 
-function isEmpty2(obj) {
-    for(var i in obj) { return false; }
+function isEmpty2( obj ) {
+    for( var i in obj ) { return false; }
     return true;
 }
 isEmpty2( person2 );
