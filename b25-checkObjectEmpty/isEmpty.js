@@ -4,6 +4,8 @@ let person = {
 };
 
 let person2 = {} ;
+
+
 //returns 0 if empty or an integer > 0 if non-empty
 function isEmpty1( obj ) {
     return Object.keys(obj).length === 0;
